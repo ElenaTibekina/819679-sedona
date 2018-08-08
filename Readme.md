@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Тибекина](https://up.htmlacademy.ru/htmlcss/22/user/819679).
-* Наставник: [Вадим Двухжилов]
-(https://htmlacademy.ru/profile/ericssan).
+* Наставник: [Вадим Двухжилов](https://htmlacademy.ru/profile/ericssan).
 
 ---
 
