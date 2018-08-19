@@ -111,17 +111,16 @@
         </div>
       </div>
     </section>
-    <section class="appointment">
+    <section class="search">
       <h2>Заинтересовались?</h2>
-      <p class="appointment-info">Укажите предполагаемые даты поездки,
+      <p class="search-info">Укажите предполагаемые даты поездки,
         <br> и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <button type="button" class="button button-search">Поиск гостиницы в Седоне</button>
     </section>
     <div class="map">
-      Интерактивная карта
+      <img src="img/map.gif" width="450" height="370" alt="Карта">
     </div>
-    <!-- Здесь будет форма -->
   </main>
   <footer class="main-footer">
     <p class="hash">#visitsedona</p>
@@ -141,6 +140,51 @@
       <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
+
+  <section class="modal modal-search">
+    <h2 class="visually-hidden">Форма поиска гостиниц</h2>
+    <form class="search-check-in" action="https://echo.htmlacademy.ru" method="post">
+      <div class="search-item">
+          <label class="search-form" for="check-in" id="from">Дата заезда:</label>
+        <input id="check-in" type="text" name="date" value="" placeholder="24 апреля 2017">
+        <button type="button" class="search-form-calendar">
+          <img src="img/svg/calendar.svg" alt="календарь">
+        </button>
+      </div>
+      <div class="search-item">
+          <label class="search-form" for="check-out" id="to">Дата выезда:</label>
+          <input id="check-out" type="text" name="date" value="" placeholder="4 июля 2017">
+          <button type="button" class="search-form-calendar">
+            <img src="img/svg/calendar.svg" alt="календарь">
+          </button>
+        </div>
+      <div class="search-item-number">
+            <label class="search-form" for="adults" id="number1">Взрослые:</label>
+            <div class="number">
+              <button class="number-button number-button-minus">
+                -
+              </button>
+              <input class="number-field" type="text" id="adults" placeholder="2">
+              <button class="number-button number-button-plus">
+                +
+              </button>
+            </div>
+          </div>
+      <div class="search-item-number">
+            <label class="search-form" for="children" id="number2">Дети:</label>
+            <div class="number">
+              <button class="number-button number-button-minus">
+                -
+              </button>
+              <input class="number-field" type="text" id="children" placeholder="0">
+              <button class="number-button number-button-plus">
+                +
+              </button>
+            </div>
+          </div>
+        <button class="button" type="submit">Найти</button>
+    </form>
+  </section>
 </body>
 
 </html>
