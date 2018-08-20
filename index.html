@@ -126,13 +126,13 @@
     <p class="hash">#visitsedona</p>
     <ul class="footer-social">
       <li>
-        <a class="social-button" href="#">Twitter</a>
+        <a class="social social-tw" href="#">Twitter</a>
       </li>
       <li>
-        <a class="social-button" href="#">Facebook</a>
+        <a class="social social-fb" href="#">Facebook</a>
       </li>
       <li>
-        <a class="social-button" href="#">Youtube</a>
+        <a class="social social-yt" href="#">Youtube</a>
       </li>
     </ul>
     <p class="footer-copyright">
@@ -145,44 +145,44 @@
     <h2 class="visually-hidden">Форма поиска гостиниц</h2>
     <form class="search-check-in" action="https://echo.htmlacademy.ru" method="post">
       <div class="search-item">
-          <label class="search-form" for="check-in" id="from">Дата заезда:</label>
+        <label class="search-form" for="check-in" id="from">Дата заезда:</label>
         <input id="check-in" type="text" name="date" value="" placeholder="24 апреля 2017">
         <button type="button" class="search-form-calendar">
-          <img src="img/svg/calendar.svg" alt="календарь">
+          <h3 class="visually-hidden">Календарь</h3>
         </button>
       </div>
       <div class="search-item">
-          <label class="search-form" for="check-out" id="to">Дата выезда:</label>
-          <input id="check-out" type="text" name="date" value="" placeholder="4 июля 2017">
-          <button type="button" class="search-form-calendar">
-            <img src="img/svg/calendar.svg" alt="календарь">
+        <label class="search-form" for="check-out" id="to">Дата выезда:</label>
+        <input id="check-out" type="text" name="date" value="" placeholder="4 июля 2017">
+        <button type="button" class="search-form-calendar">
+          <h3 class="visually-hidden">Календарь</h3>
+        </button>
+      </div>
+      <div class="search-item-number">
+        <label class="search-form" for="adults" id="number1">Взрослые:</label>
+        <div class="number">
+          <button class="number-button number-button-minus">
+            <h3 class="visually-hidden">Минус</h3>
+          </button>
+          <input class="number-field" type="text" id="adults" placeholder="2">
+          <button class="number-button number-button-plus">
+            <h3 class="visually-hidden">Плюс</h3>
           </button>
         </div>
+      </div>
       <div class="search-item-number">
-            <label class="search-form" for="adults" id="number1">Взрослые:</label>
-            <div class="number">
-              <button class="number-button number-button-minus">
-                -
-              </button>
-              <input class="number-field" type="text" id="adults" placeholder="2">
-              <button class="number-button number-button-plus">
-                +
-              </button>
-            </div>
-          </div>
-      <div class="search-item-number">
-            <label class="search-form" for="children" id="number2">Дети:</label>
-            <div class="number">
-              <button class="number-button number-button-minus">
-                -
-              </button>
-              <input class="number-field" type="text" id="children" placeholder="0">
-              <button class="number-button number-button-plus">
-                +
-              </button>
-            </div>
-          </div>
-        <button class="button" type="submit">Найти</button>
+        <label class="search-form" for="children" id="number2">Дети:</label>
+        <div class="number">
+          <button class="number-button number-button-minus">
+            <h3 class="visually-hidden">Минус</h3>
+          </button>
+          <input class="number-field" type="text" id="children" placeholder="0">
+          <button class="number-button number-button-plus">
+            <h3 class="visually-hidden">Плюс</h3>
+          </button>
+        </div>
+      </div>
+      <button class="button" type="submit">Найти</button>
     </form>
   </section>
 </body>
