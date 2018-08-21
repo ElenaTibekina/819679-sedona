@@ -78,19 +78,23 @@
           <div class="range">
             <div class="range-fields">
               <div class="range-field">
-                <label for="range1">От</label>
-                <input type="text" id="range1">
+                <label for="range1"></label>
+                <input type="text" id="range1" placeholder="от 0">
               </div>
               <div class="range-field">
-                <label for="range2">До</label>
-                <input type="text" id="range2">
+                <label for="range2"></label>
+                <input type="text" id="range2" placeholder="до 3000">
               </div>
             </div>
             <div class="range-bar">
-              <input class="visually-hidden filter-input filter-input-range" type="range" name="price" id="price-filter">
-              <label for="price-filter"></label>
-              <button class="range-button range-button-from">От</button>
-              <button class="range-button range-button-to">До</button>
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div>
+                <button class="range-button range-button-from"></button>
+              </div>
+              <div>
+                <button class="range-button range-button-to"></button>
+              </div>
             </div>
           </div>
         </fieldset>
@@ -116,6 +120,12 @@
         </li>
       </ul>
     </div>
+    <a href="#">
+      <div class="up"></div>
+    </a>
+    <a href="#">
+      <div class="down"></div>
+    </a>
     <div class="hotel">
       <h2 class="visually-hidden">Список вариантов проживания</h2>
       <ul class="hotels-list">
