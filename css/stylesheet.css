@@ -191,6 +191,10 @@ a {
   height: 395px;
 }
 
+.filters {
+  background-image: url("img/background/filter-background.jpg")
+}
+
 .search-item input {
   font: inherit;
   text-transform: uppercase;
