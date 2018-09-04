@@ -17,6 +17,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-header {
   position: relative;
   width: 100%;
@@ -70,6 +75,8 @@ main {
 }
 
 .menu-list a {
+  display: block;
+  vertical-align: middle;
   color: #000000;
 }
 
@@ -142,6 +149,9 @@ main {
 }
 
 .feature-title h3 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -155,7 +165,7 @@ main {
 }
 
 .feature-item-description {
-  width: 33%;
+  width: 26%;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -164,7 +174,7 @@ main {
 .feature-image {
   margin: 0;
   padding: 0;
-  width: 66%;
+  width: 74%;
 }
 
 .feature-blue .feature-description {
@@ -173,17 +183,23 @@ main {
   font-weight: regular;
 }
 
-.feature-blue > .feature-item-description {
+.feature-blue-1 > .feature-item-description {
   padding-bottom: 60px;
   padding-top: 25px;
-  padding-left: 15px;
-  padding-right: 60px;
+  padding-left: 60px;
+  padding-right: 57px;
 }
 
+.feature-blue-3 > .feature-item-description {
+  padding-bottom: 60px;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .feature-blue-1{
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  width: 100%;
 }
 
 .feature-image-1 {
@@ -206,6 +222,7 @@ main {
 }
 
 .feature-white {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -214,39 +231,49 @@ main {
 }
 
 .feature-icon {
-  width: 30%;
+  width: 33%;
   min-height: 330px;
 }
 
 .feature-icon-home {
+  margin-top: 58px;
+  position: absolute;
+  left: 164px;
   background-image: url("../img/svg/icon-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  min-height: 85px;
+  min-height: 70px;
 }
 
 .feature-icon-food {
+  margin-top: 58px;
+  position: absolute;
+  left: 164px;
   background-image: url("../img/svg/icon-3.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  min-height: 85px;
+  min-height: 70px;
 }
 
 .feature-icon-gift {
+  margin-top: 50px;
+  position: absolute;
+  left: 167px;
   background-image: url("../img/svg/icon-2.svg");
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  min-height: 85px;
+  min-height: 74px;
 }
 
 .feature-block {
   margin: 0;
   margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -869,12 +896,21 @@ legend {
 }
 
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
