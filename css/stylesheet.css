@@ -4,9 +4,9 @@ body {
   width: 100%;
   margin: 0 auto;
   box-shadow: 2px 0px 20px 2px #dbdbdb;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
-  line-height:26px;
+  line-height: 26px;
   color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -55,7 +55,6 @@ main {
   z-index: 1;
 }
 
-
 .container .inner-page {
   background-color: #fefefe;
 }
@@ -71,7 +70,7 @@ main {
 }
 
 .menu-item:nth-child(2) {
-  margin-right:250px;
+  margin-right: 250px;
 }
 
 .menu-list a {
@@ -196,7 +195,7 @@ main {
   padding-left: 50px;
   padding-right: 50px;
 }
-.feature-blue-1{
+.feature-blue-1 {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -237,47 +236,38 @@ main {
 
 .feature-icon-home {
   margin-top: 58px;
-  position: absolute;
-  left: 164px;
   background-image: url("../img/svg/icon-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative;
-  min-height: 70px;
+  background-position: center;
+  height: 70px;
 }
 
 .feature-icon-food {
   margin-top: 58px;
-  position: absolute;
-  left: 164px;
+  background-position: center;
   background-image: url("../img/svg/icon-3.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative;
   min-height: 70px;
 }
 
 .feature-icon-gift {
   margin-top: 50px;
-  position: absolute;
-  left: 167px;
+  background-position: center;
   background-image: url("../img/svg/icon-2.svg");
-  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative;
-  min-height: 74px;
+  height: 74px;
 }
 
 .feature-block {
   margin: 0;
   margin-top: 30px;
-  padding-top: 0;
-  padding-bottom: 0;
   text-align: center;
 }
 
-.feature-white .feature-description  {
+.feature-white .feature-description {
   font-size: 14px;
   font-weight: regular;
   color: #333333;
@@ -291,13 +281,23 @@ main {
   align-items: center;
   justify-content: space-between;
   background-color: #eeeeee;
+  margin-bottom: 0;
 }
 
 .feature-grey-block {
   text-align: center;
-  width: 30%;
-  min-height: 256px;
-  padding-top: 55px;
+  width: 33%;
+  height: 256px;
+}
+
+.feature-grey-block > .feature-title {
+  margin-top: 40px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  height: 285px;
 }
 
 .search h2 {
@@ -306,10 +306,12 @@ main {
   font-weight: bold;
   color: #000000;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 
 .search > p {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .search-info {
@@ -318,6 +320,7 @@ main {
   font-weight: regular;
   color: #333333;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .button {
@@ -327,12 +330,47 @@ main {
   border: none;
 }
 
+.map {
+  display: flex;
+  flex-direction: column;
+  background: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.modal {
+  align-self: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #ffffff;
+  text-align: center;
+  width: 568px;
+  height: 395px;
+}
+
+.search-item {
+  margin: 0;
+}
+
+.apointment-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .button-search {
-  position: relative;
-  left: 25%;
+  margin-bottom: 0;
+  padding: 0;
+  align-self: center;
   font-size: 21px;
   line-height: 24px;
   font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
   background-color: #766357;
   color: #ffffff;
@@ -349,19 +387,15 @@ main {
   background-color: #503e33;
 }
 
-.map {
-  background: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 480px;
-  position: relative;
-}
-
 .button-find {
+  margin-bottom: 0;
+  padding: 0;
+  align-self: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  text-align: center;
+  border: none;
+  text-transform: uppercase;
   background-color: #81b3d2;
   color: #ffffff;
   width: 458px;
@@ -374,18 +408,6 @@ main {
 
 .button-find:active {
   background-color: #5496bd;
-}
-
-.modal {
-  position: relative;
-  left: 25%;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  background-color: #ffffff;
-  text-align: center;
-  width: 568px;
-  height: 395px;
 }
 
 .filters {
@@ -593,7 +615,6 @@ legend {
   position: absolute;
   left: -31px;
 
-
   width: 16px;
   height: 16px;
 
@@ -655,7 +676,6 @@ legend {
   bottom: 65px;
 }
 
-
 .breadcrumbs a {
   font-size: 12px;
   line-height: 18px;
@@ -705,7 +725,6 @@ legend {
 }
 
 .hotel-item {
-  box-flex: 155px;
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
@@ -837,10 +856,12 @@ legend {
   color: #333333;
 }
 
-
 .main-footer {
   padding: 52px 73px;
-  margin-top: 0;
+  margin: 0;
+  padding-top: 40px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   color: #000000;
   opacity: 90%;
   background-color: #f9fbf5;
@@ -850,51 +871,71 @@ legend {
 
 .main-footer-container {
   display: flex;
-  min-height: 180px;
-}
-
-.footer-social {
-  width: 155px;
-  min-height: 50px;
-  text-align: center;
+  height: 120px;
 }
 
 .main-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 155px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
-.social-button {
-  color: #ffffff;
-}
-
-
 .footer-copyright {
+  display: block;
+  margin-top: 0;
   margin-left: auto;
   width: 241px;
-  min-height: 50px;
+  height: 50px;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   font-weight: regular;
-  text-align: center;
 }
 
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
+.footer-copyright a {
+  display: block;
+  margin: 0;
+  width: 115px;
+  height: 41px;
+  background-color: transparent;
   color: #000000;
-  background-color: #ffffff;
 }
 
+.social-button {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  fill: #88b6d1;
+}
 
 .hash {
-  margin-right: 255px;
-  min-height: 50px;
+  margin: 0;
+  margin-right: auto;
   width: 240px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
@@ -912,6 +953,3 @@ input[type="checkbox"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
-
