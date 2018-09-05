@@ -763,6 +763,12 @@ legend {
   justify-content: space-between;
 }
 
+.stars span {
+  padding-top: 32px;
+  display: inline-block;
+  height: 41px;
+}
+
 .button-more {
   text-align: center;
   font-size: 14px;
