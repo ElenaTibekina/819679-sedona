@@ -10,7 +10,6 @@ body {
   color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  background-image: url("img/background-image.jpg");
 }
 
 a {
@@ -698,9 +697,11 @@ legend {
 }
 
 .hotel-sorting {
+  display: flex;
   padding-top: 40px;
   padding-left: 73px;
   margin-bottom: 2px;
+  height: 90px;
 }
 
 .catalog {
@@ -708,7 +709,7 @@ legend {
   padding: 0;
   margin: 0;
   width: 100%;
-  min-height: 540px;
+  height: 540px;
 }
 
 .hotels-list {
@@ -720,13 +721,8 @@ legend {
   background: #f2f2f2;
 }
 
-.hotel-picture {
-  padding-left: 73px;
-}
-
 .hotel-item {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: flex;
   width: 100%;
   height: 155px;
   margin-bottom: 2px;
@@ -734,38 +730,41 @@ legend {
   background: #ffffff;
 }
 
-.hotel-item-title {
-  margin-left: 239px;
-  position: relative;
-  bottom: 125px;
+.hotel-picture {
+  padding-top: 29px;
+  padding-left: 73px;
 }
 
-.hotel-item-discription {
-  padding-left: 239px;
-  position: relative;
-  bottom: 135px;
+.hotel-item-container {
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
 }
 
-.hotel-item-price {
-  padding-left: 355px;
-  position: relative;
-  bottom: 170px;
+.hotel-name {
+  margin-bottom: 0;
+  padding: 0;
 }
 
-.hotel-rate-discription {
-  text-align: center;
-  vertical-align: center;
-  position: relative;
-  margin: 0 auto;
-  bottom: 200px;
-  background: #f2f2f2;
+.hotel-type-info {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.hotel-rate-container {
+  margin-left: auto;
+}
+
+.hotel-item-buttons {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
 }
 
 .button-more {
-  position: relative;
-  left: 239px;
-  bottom: 175px;
-  padding: 5px;
+  text-align: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
@@ -785,15 +784,12 @@ legend {
 }
 
 .button-book {
-  position: relative;
-  left: 255px;
-  bottom: 175px;
-  padding: 5px;
+  text-align: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
-  width: 110px;
+  width: 142px;
   height: 27px;
   background-color: #766357;
 }
@@ -866,7 +862,7 @@ legend {
 
 .main-footer-container {
   text-align: center;
-  vertical-align: middle;
+  align-items: center;
   display: flex;
   height: 57px;
 }
@@ -883,7 +879,6 @@ legend {
 
 .footer-copyright {
   display: block;
-  margin-top: 0;
   margin-left: auto;
   width: 241px;
   height: 50px;
@@ -930,7 +925,6 @@ legend {
 .hash {
   align-items: center;
   margin-right: auto;
-  margin-top: auto;
   width: 240px;
   font-size: 21px;
   line-height: 26px;
