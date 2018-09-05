@@ -338,7 +338,7 @@ main {
   background-size: cover;
   height: 480px;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: -120;
   padding: 0;
 }
 
@@ -857,21 +857,18 @@ legend {
 }
 
 .main-footer {
-  padding: 52px 73px;
-  margin: 0;
-  padding-top: 40px;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 32px 63px;
   color: #000000;
-  opacity: 0.8;
   background-color: #f9fbf5;
-  background-position: 0 0;
+  opacity: 0.8;
   background-repeat: repeat;
 }
 
 .main-footer-container {
+  text-align: center;
+  vertical-align: middle;
   display: flex;
-  height: 120px;
+  height: 57px;
 }
 
 .main-footer ul {
@@ -898,6 +895,7 @@ legend {
 
 .footer-copyright .button {
   display: inline-block;
+  justify-content: center;
   margin: 0;
   padding-right: 30px;
   width: 115px;
@@ -930,8 +928,9 @@ legend {
 }
 
 .hash {
-  margin: 0;
+  align-items: center;
   margin-right: auto;
+  margin-top: auto;
   width: 240px;
   font-size: 21px;
   line-height: 26px;
