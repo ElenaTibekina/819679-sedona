@@ -863,7 +863,7 @@ legend {
   margin-bottom: 0;
   padding-bottom: 0;
   color: #000000;
-  opacity: 90%;
+  opacity: 0.8;
   background-color: #f9fbf5;
   background-position: 0 0;
   background-repeat: repeat;
@@ -896,9 +896,10 @@ legend {
   font-weight: regular;
 }
 
-.footer-copyright a {
-  display: block;
+.footer-copyright .button {
+  display: inline-block;
   margin: 0;
+  padding-right: 30px;
   width: 115px;
   height: 41px;
   background-color: transparent;
