@@ -704,27 +704,63 @@ legend {
   color: #000000;
 }
 
-.up-down a {
-  height: 15px;
-  width: 35px;
+.up-down {
+  display: flex;
   justify-content: space-between;
+  width: 35px;
+  height: 15px;
+  margin-right: 103px;
+}
+
+.up-down a {
   display: block;
   font-size: 0;
 }
 
-.up a {
+.up {
   background-image: url("../img/svg/icon-up-dir.svg");
   background-repeat: no-repeat;
   height: 11px;
-  width: 10px;
+  width: 12px;
 }
 
-.down a  {
+.up:active {
+  background-image: url("../img/svg/up-active.svg");
+  background-repeat: no-repeat;
+  height: 11px;
+  width: 12px;
+}
+
+.up:hover {
+  background-image: url("../img/svg/up-hover.svg");
+  background-repeat: no-repeat;
+  height: 11px;
+  width: 12px;
+}
+
+.down {
   background-image: url("../img/svg/icon-down-dir.svg");
   background-repeat: no-repeat;
   height: 11px;
-  width: 10px;
+  width: 12px;
 }
+
+.down:active,
+.down-current {
+  background-image: url("../img/svg/down-active.svg");
+  background-repeat: no-repeat;
+  height: 11px;
+  width: 12px;
+}
+
+.down:hover {
+  background-image: url("../img/svg/down-hover.svg");
+  background-repeat: no-repeat;
+  height: 11px;
+  width: 12px;
+}
+
+
 
 .catalog {
   padding: 0;
@@ -763,6 +799,7 @@ legend {
   padding: 0;
   margin: 0;
   margin-left: 30px;
+
 }
 
 .hotel-name {
@@ -777,6 +814,10 @@ legend {
 }
 
 .hotel-rate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 73px;
   margin-left: auto;
 }
 
@@ -842,12 +883,15 @@ legend {
 }
 
 
-.hotel-item-title,
-.hotel-item-title:active {
+.hotel-item-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+.hotel-item-title:active {
+  color: #cacaca;
 }
 
 .hotel-item-title:hover {
@@ -911,6 +955,14 @@ legend {
   height: 41px;
   background-color: transparent;
   color: #000000;
+}
+
+.footer-copyright:hover path {
+  fill: #88b6d1;
+}
+
+.footer-copyright:active path {
+  fill: #bdbbbc;
 }
 
 .social-button {
