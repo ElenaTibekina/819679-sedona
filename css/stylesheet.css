@@ -383,6 +383,7 @@ main {
 
 .button-search:focus,
 .button-search:active {
+  color: rgba(255,255,255,0.3);
   background-color: #503e33;
 }
 
@@ -406,6 +407,7 @@ main {
 }
 
 .button-find:active {
+  color: rgba(255,255,255,0.3);
   background-color: #5496bd;
 }
 
@@ -866,8 +868,7 @@ legend {
 
 .button-more:active {
   background-color: #5496bd;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255,255,255,0.3);
 }
 
 .button-book {
@@ -891,8 +892,7 @@ legend {
 
 .button-book:active {
   background-color: #503e33;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255,255,255,0.3);
 }
 
 .hotel-rate-discription {
