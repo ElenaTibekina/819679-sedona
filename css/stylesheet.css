@@ -724,15 +724,15 @@ legend {
   width: 12px;
 }
 
-.up:active {
-  background-image: url("../img/svg/up-active.svg");
+.up:hover {
+  background-image: url("../img/svg/up-hover.svg");
   background-repeat: no-repeat;
   height: 11px;
   width: 12px;
 }
 
-.up:hover {
-  background-image: url("../img/svg/up-hover.svg");
+.up:active {
+  background-image: url("../img/svg/up-active.svg");
   background-repeat: no-repeat;
   height: 11px;
   width: 12px;
@@ -745,14 +745,6 @@ legend {
   width: 12px;
 }
 
-.down:active,
-.down-current {
-  background-image: url("../img/svg/down-active.svg");
-  background-repeat: no-repeat;
-  height: 11px;
-  width: 12px;
-}
-
 .down:hover {
   background-image: url("../img/svg/down-hover.svg");
   background-repeat: no-repeat;
@@ -760,7 +752,13 @@ legend {
   width: 12px;
 }
 
-
+.down:active,
+.down-current {
+  background-image: url("../img/svg/down-active.svg");
+  background-repeat: no-repeat;
+  height: 11px;
+  width: 12px;
+}
 
 .catalog {
   padding: 0;
@@ -779,45 +777,50 @@ legend {
 
 .hotel-item {
   display: flex;
-  width: 100%;
-  height: 155px;
+  justify-content: space-between;
+  align-items: center;
+
   margin-bottom: 1px;
+  padding-left: 73px;
+  padding-right: 73px;
   background: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .hotel-item:first-child {
   margin-top: 1px;
 }
 
-.hotel-picture {
-  padding-top: 29px;
-  padding-left: 73px;
-}
+
 
 .hotel-item-container {
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
   margin-left: 30px;
-
+  height: 90px;
+  width: 265px;
+  margin-top: -10px;
 }
 
 .hotel-name {
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
 }
 
 .hotel-type-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 185px;
+  height: 30px;
 }
 
 .hotel-rate-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-right: 73px;
+  align-items: flex-end;
+  height: 90px;
   margin-left: auto;
 }
 
@@ -828,18 +831,20 @@ legend {
 }
 
 .stars span {
-  padding-top: 32px;
   display: inline-block;
   height: 41px;
 }
 
 .button-more {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
-  width: 110px;
+  width: 90px;
   height: 27px;
   background-color: #81b3d2;
 }
@@ -854,12 +859,15 @@ legend {
 }
 
 .button-book {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
-  width: 142px;
+  width: 122px;
   height: 27px;
   background-color: #766357;
 }
@@ -874,12 +882,15 @@ legend {
 }
 
 .hotel-rate-discription {
+  padding-top: 5px;
+  text-align: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: regular;
   color: #666666;
   width: 110px;
   height: 27px;
+  background-color: #f2f2f2;
 }
 
 
