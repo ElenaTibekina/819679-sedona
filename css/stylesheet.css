@@ -415,7 +415,7 @@ main {
   position: relative;
   background-size: cover;
   width: 100%;
-  min-height: 220px;
+  height: 220px;
   color: hsl(0, 0%, 100%);
 }
 
@@ -425,12 +425,16 @@ main {
   padding: 35px 73px;
 }
 
+
+
 .filter-checkbox-block {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-right: auto;
-  width: 400px;
+  width: 375px;
 }
+
 
 .filter fieldset {
   padding: 0;
@@ -579,16 +583,17 @@ legend {
   padding: 0;
   list-style: none;
   line-height: 21px;
+  padding-left: auto;
 }
 
 .filter-option {
   margin-bottom: 30px;
-  padding-left: 35px;
+  padding-left: 0;
 }
 
 .filter-option label {
   position: relative;
-
+  padding-left: 30px;
   display: block;
 
   cursor: pointer;
@@ -598,28 +603,33 @@ legend {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -33px;
+  left: 0;
 
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
 
   border: 2px solid #ffffff;
   border-radius: 3px;
 }
+
 
 .filter-input-checkbox:checked + label::after {
   border: transparent;
   content: "";
 
   position: absolute;
-  left: -31px;
+  left: 0;
 
-  width: 16px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
 
   background-image: url("../img/svg/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-position: -3px -2px;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+  display: none;
 }
 
 .search-item input {
@@ -690,11 +700,11 @@ legend {
 }
 
 .hotel-sort-item {
-  padding-right: 46px;
+  padding-right: 36px;
 }
 
 .hotel-sort-item-name {
-  padding-right: 40px;
+  padding-right: 30px;
 }
 
 .hotel-sort-title {
@@ -702,6 +712,7 @@ legend {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  padding-right: 10px;
 }
 
 .up-down {
@@ -779,13 +790,12 @@ legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 150px;
   margin-bottom: 1px;
   padding-left: 73px;
   padding-right: 73px;
   background: #ffffff;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
 }
 
 .hotel-item:first-child {
@@ -826,7 +836,7 @@ legend {
 
 .hotel-item-buttons {
   display: flex;
-  width: 260px;
+  width: 256px;
   justify-content: space-between;
 }
 
@@ -856,6 +866,8 @@ legend {
 
 .button-more:active {
   background-color: #5496bd;
+  color: #ffffff;
+  opacity: 0.3;
 }
 
 .button-book {
@@ -879,6 +891,8 @@ legend {
 
 .button-book:active {
   background-color: #503e33;
+  color: #ffffff;
+  opacity: 0.3;
 }
 
 .hotel-rate-discription {
