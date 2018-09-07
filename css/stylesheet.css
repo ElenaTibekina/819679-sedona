@@ -352,6 +352,24 @@ main {
   height: 395px;
 }
 
+button .search-form-calendar {
+  display: block;
+  font-size: 0;
+  width: 21px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  fill: #cacaca;
+}
+
+.search-form-calendar:hover {
+  fill: #000000;
+}
+
+.search-form-calendar:active {
+  fill: #81b3d2;
+}
+
 .search-item {
   margin: 0;
 }
@@ -603,15 +621,33 @@ legend {
 }
 
 .filter-input-checkbox + label::before {
+  border: transparent;
   content: "";
+
   position: absolute;
   left: 0;
 
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 23px;
 
-  border: 2px solid #ffffff;
-  border-radius: 3px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  border: transparent;
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/svg/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 
@@ -622,13 +658,29 @@ legend {
   position: absolute;
   left: 0;
 
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 23px;
 
   background-image: url("../img/svg/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+.filter-input-checkbox:disabled + label::after {
+  border: transparent;
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/svg/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 
 .filter-input-checkbox:checked + label::before {
   display: none;
