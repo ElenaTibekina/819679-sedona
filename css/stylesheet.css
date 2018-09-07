@@ -361,6 +361,10 @@ main {
   height: 395px;
 }
 
+.modal-search {
+  position: absolute;
+}
+
 .apointment-form {
   display: flex;
   padding-top: 55px;
