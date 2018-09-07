@@ -335,9 +335,9 @@ main {
   background: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 480px;
+  height: 600px;
   width: 100%;
-  margin-bottom: -120;
+  margin-bottom: -120px;
   padding: 0;
 }
 
@@ -370,6 +370,22 @@ main {
   padding-top: 55px;
 }
 
+.search-item {
+  display: flex;
+}
+
+.date-field {
+  display: flex;
+  background: #f2f2f2;
+  height: 38px;
+  margin-bottom: 30px;
+}
+
+.date-field input {
+  background-color: transparent;
+  border: none;
+}
+
 .search-form-age {
   padding-right: 20px;
 }
@@ -391,8 +407,17 @@ main {
 
 .search-item-number-children {
   display: flex;
-  margin: 0;
-  padding: 0;
+}
+
+.number {
+  display: flex;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+
+.number-input {
+  background-color: transparent;
+  border: none;
 }
 
 .number-button {
@@ -402,8 +427,8 @@ main {
   line-height: 26px;
   font-weight: bold;
   color: #a9a9a9;
-  background-color: #f2f2f2;
-  border: none;
+  background-color: transparent;
+  border: 0;
 }
 
 .number-field input {
@@ -414,14 +439,9 @@ main {
 
 
 button .search-form-calendar {
-  display: block;
-  top: 20px;
-  font-size: 0;
-  width: 21px;
-  height: 22px;
   background-color: transparent;
-  border: none;
-  fill: #cacaca;
+  border: 0;
+  width: 20px;
 }
 
 .search-form-calendar:hover {
@@ -432,9 +452,7 @@ button .search-form-calendar {
   fill: #81b3d2;
 }
 
-.search-item {
-  margin: 0;
-}
+
 
 .apointment-form {
   display: flex;
@@ -1053,7 +1071,7 @@ legend {
   padding: 32px 63px;
   color: #000000;
   background-color: #f9fbf5;
-  opacity: 0.8;
+  opacity: 0.9;
   background-repeat: repeat;
 }
 
