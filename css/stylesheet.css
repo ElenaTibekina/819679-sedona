@@ -146,8 +146,7 @@ main {
   margin-bottom: 55px;
 }
 
-.feature-title  {
-
+.feature-title {
   margin: 0;
   margin-bottom: 25px;
   margin-top: 20px;
@@ -178,7 +177,6 @@ main {
   font-size: 14px;
   line-height: 21px;
   font-weight: regular;
-
 }
 
 .feature-blue-1 > .feature-item-description {
@@ -347,7 +345,6 @@ main {
   border: none;
 }
 
-
 .modal {
   display: flex;
   justify-content: center;
@@ -372,37 +369,50 @@ main {
 
 .search-item {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .date-field {
   display: flex;
   background: #f2f2f2;
-  margin-bottom: 20px;
-  width: 349px;
-  margin-left: 24px;
+  width: 345px;
+}
+
+.search-form-check-in {
+  margin-right: 24px;
+  padding-top: 7px;
+}
+
+.search-form-check-out {
+  margin-right: 21px;
+  padding-top: 7px;
 }
 
 .date-field input {
   height: 38px;
-  padding: 12px 10px;
+  padding: 9px 5px;
   box-sizing: border-box;
   background-color: transparent;
   border: none;
 }
 
-.search-form-age {
-  padding-right: 50px;
+.search-form-age-adults {
+  margin-right: 40px;
+  padding-top: 7px;
 }
 
+.search-form-age-children {
+  margin-right: 55px;
+  padding-top: 7px;
+}
 
 .search-item-number {
   display: flex;
-  margin-bottom: 40px;
-  width: 120px;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
-
-.search-item-number-adults  {
+.search-item-number-adults {
   display: flex;
 }
 
@@ -413,7 +423,6 @@ main {
 .number {
   display: flex;
   background-color: #f2f2f2;
-  width: 115px;
 }
 
 .number-input {
@@ -437,11 +446,11 @@ main {
   background-color: #f2f2f2;
 }
 
-
-button .search-form-calendar {
+.search-form-calendar {
   background-color: transparent;
-  border: 0;
-  width: 20px;
+  border: none;
+  padding-right: 12px;
+  fill: #a9a9a9;
 }
 
 .search-form-calendar:hover {
@@ -479,7 +488,7 @@ button .search-form-calendar {
 
 .button-search:focus,
 .button-search:active {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -503,7 +512,7 @@ button .search-form-calendar {
 }
 
 .button-find:active {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -523,8 +532,6 @@ button .search-form-calendar {
   padding: 35px 73px;
 }
 
-
-
 .filter-checkbox-block {
   display: flex;
   justify-content: space-between;
@@ -532,7 +539,6 @@ button .search-form-calendar {
   margin-right: auto;
   width: 375px;
 }
-
 
 .filter fieldset {
   padding: 0;
@@ -728,7 +734,6 @@ legend {
   background-position: 0 0;
 }
 
-
 .filter-input-checkbox:checked + label::after {
   border: transparent;
   content: "";
@@ -758,7 +763,6 @@ legend {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .filter-input-checkbox:checked + label::before {
   display: none;
@@ -927,14 +931,11 @@ legend {
   padding-left: 73px;
   padding-right: 73px;
   background: #ffffff;
-
 }
 
 .hotel-item:first-child {
   margin-top: 1px;
 }
-
-
 
 .hotel-item-container {
   display: flex;
@@ -998,7 +999,7 @@ legend {
 
 .button-more:active {
   background-color: #5496bd;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-book {
@@ -1022,7 +1023,7 @@ legend {
 
 .button-book:active {
   background-color: #503e33;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-rate-discription {
@@ -1036,7 +1037,6 @@ legend {
   height: 27px;
   background-color: #f2f2f2;
 }
-
 
 .hotel-item-title {
   font-size: 21px;
