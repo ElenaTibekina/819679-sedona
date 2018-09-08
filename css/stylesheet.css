@@ -373,11 +373,7 @@ main {
 }
 
 .date-field {
-  display: flex;
-  background: #f2f2f2;
-  width: 345px;
-  height: 38px;
-  border: none;
+  position: relative;
 }
 
 .search-form-check-in {
@@ -391,10 +387,24 @@ main {
 }
 
 .date-field input {
-  height: 38px;
-  padding: 9px 4px;
+  display: flex;
+  padding: 10px 10px;
   box-sizing: border-box;
   background: transparent;
+  background: #f2f2f2;
+  width: 345px;
+  height: 38px;
+  border: none;
+  padding-right: 38px;
+}
+
+.date-field input:hover {
+  background: #ebebeb;
+}
+
+.date-field input:focus {
+  background: transparent;
+  border: 2px solid #e5e5e5;
 }
 
 .search-form-age-adults {
@@ -432,6 +442,7 @@ main {
   width: 38px;
   background: transparent;
   border: none;
+  padding: 5px 5px;
 }
 
 .number-button {
@@ -444,6 +455,15 @@ main {
   border: 0;
   width: 34px;
   height: 38px;
+  outline: none;
+}
+
+.number-button:hover {
+  color: #000000;
+}
+
+.number-button:active {
+  color: #81b3d2;
 }
 
 .number-field input {
@@ -452,10 +472,14 @@ main {
 }
 
 .search-form-calendar {
+  position: absolute;
+  right: 0;
+  top: 5px;
   background-color: transparent;
   border: none;
   padding-right: 12px;
   fill: #a9a9a9;
+  outline: none;
 }
 
 .search-form-calendar:hover {
@@ -778,7 +802,6 @@ legend {
 .search-item input {
   font: inherit;
   text-transform: uppercase;
-  margin: 5px;
   background-color: #f2f2f2;
   color: #000000;
   width: 346px;
@@ -790,11 +813,10 @@ legend {
   text-align: center;
   font: inherit;
   text-transform: uppercase;
-  margin: 5px;
   background-color: #f2f2f2;
   color: #000000;
   width: 38px;
-  height: 38px;
+  height: 36px;
   border: none;
 }
 
