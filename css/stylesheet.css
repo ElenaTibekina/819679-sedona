@@ -377,27 +377,28 @@ main {
 .date-field {
   display: flex;
   background: #f2f2f2;
-  height: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  width: 349px;
+  margin-left: 24px;
 }
 
 .date-field input {
+  height: 38px;
+  padding: 12px 10px;
+  box-sizing: border-box;
   background-color: transparent;
   border: none;
 }
 
 .search-form-age {
-  padding-right: 20px;
+  padding-right: 50px;
 }
 
 
 .search-item-number {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  height: 47px;
-  margin-bottom: 25px;
-  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 120px;
 }
 
 
@@ -411,8 +412,8 @@ main {
 
 .number {
   display: flex;
-  height: 38px;
   background-color: #f2f2f2;
+  width: 115px;
 }
 
 .number-input {
@@ -421,9 +422,8 @@ main {
 }
 
 .number-button {
-  width: 38px;
-  height: 38px;
-  font-size: 14px;
+  text-align: center;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #a9a9a9;
@@ -451,8 +451,6 @@ button .search-form-calendar {
 .search-form-calendar:active {
   fill: #81b3d2;
 }
-
-
 
 .apointment-form {
   display: flex;
