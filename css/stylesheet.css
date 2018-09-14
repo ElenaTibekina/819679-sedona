@@ -138,7 +138,8 @@ main {
   right: 0;
 }
 
-.background-mask {
+.background-image::after {
+  content: ' ';
   background-image: url("../img/background/polygon.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -169,7 +170,7 @@ main {
 .reasons-description {
   font-size: 14px;
   line-height: 26px;
-  font-weight: regular;
+  font-weight: normal;
   color: #333333;
   text-align: center;
   margin-bottom: 55px;
@@ -223,7 +224,7 @@ main {
 .feature-blue .feature-description {
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
+  font-weight: normal;
 }
 
 .feature-blue-1 .feature-description {
@@ -360,7 +361,7 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  font-weight: regular;
+  font-weight: normal;
   color: #333333;
 }
 
@@ -428,7 +429,7 @@ main {
 .search-info {
   font-size: 14px;
   line-height: 24px;
-  font-weight: regular;
+  font-weight: normal;
   color: #333333;
   text-align: center;
   margin-bottom: 0;
@@ -466,23 +467,6 @@ main {
   border: none;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
 
 .modal {
   display: -webkit-box;
@@ -772,7 +756,7 @@ main {
 .filter legend {
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
+  font-weight: normal;
   color: #ffffff;
 }
 
@@ -811,7 +795,7 @@ main {
 }
 
 .price-controls label {
-  display: inline-block;
+  display: block;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -834,6 +818,7 @@ main {
 
 .price-controls input {
   width: 50px;
+  height: 38px;
   margin: 0;
 
   color: inherit;
@@ -1035,6 +1020,7 @@ main {
 }
 
 .hotel-sorting {
+  background: #fefefe;
   margin: 0;
   padding: 0;
   height: 86px;
@@ -1066,7 +1052,7 @@ main {
 .breadcrumbs a {
   font-size: 12px;
   line-height: 18px;
-  font-weight: regular;
+  font-weight: normal;
   color: #cacaca;
   -webkit-text-decoration: underline dotted #81b3d2;
           text-decoration: underline dotted #81b3d2;
@@ -1321,14 +1307,12 @@ main {
 }
 
 .hotel-rate-discription {
-  padding-top: 5px;
   text-align: center;
   font-size: 14px;
-  line-height: 21px;
-  font-weight: regular;
+  line-height: 27px;
+  font-weight: normal;
   color: #666666;
   width: 110px;
-  height: 27px;
   background-color: #f2f2f2;
 }
 
@@ -1355,7 +1339,7 @@ main {
 .hotel-item-price {
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
+  font-weight: normal;
   color: #333333;
 }
 
@@ -1394,14 +1378,16 @@ main {
 }
 
 .footer-copyright {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   margin-left: auto;
   width: 241px;
   height: 50px;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-  font-weight: regular;
+  font-weight: normal;
 }
 
 .footer-copyright .button {
