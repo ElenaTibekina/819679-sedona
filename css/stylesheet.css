@@ -185,18 +185,17 @@ main {
 
 
 .feature-blue-1 .feature-title {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  margin-right: 5px;
-  font-size: 21px;
-  line-height: 21px;
+  width: 135px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 21px;
 }
 
 .feature-blue-3 .feature-title {
+  width: 160px;
+  height: 40px;
   padding-top: 15px;
   padding-bottom: 21px;
-  font-size: 21px;
-  line-height: 21px;
 }
 
 
@@ -239,8 +238,8 @@ main {
 
 .feature-blue-1 > .feature-item-description {
   width: 33%;
-  padding-bottom: 20px;
-  padding-top: 25px;
+  padding-bottom: 60px;
+  padding-top: 30px;
 }
 
 
@@ -311,6 +310,8 @@ main {
 }
 
 .feature-icon {
+  padding-left: 45px;
+  padding-right: 45px;
   width: 33%;
   min-height: 330px;
 }
@@ -355,11 +356,8 @@ main {
 .feature-white .feature-description {
   width: 300px;
   min-height: 40px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 45px;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 14px;
   font-weight: normal;
   color: #333333;
@@ -795,7 +793,7 @@ main {
 }
 
 .price-controls label {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -1187,7 +1185,7 @@ main {
   margin-bottom: 1px;
   padding-left: 73px;
   padding-right: 73px;
-  background: #ffffff;
+  background: #fefefe;
 }
 
 .hotel-item:first-child {
@@ -1346,7 +1344,7 @@ main {
 .main-footer {
   padding: 32px 63px;
   color: #000000;
-  background-color: #f9fbf5;
+  background-color: #fefefe;
   opacity: 0.9;
   background-repeat: repeat;
 }
