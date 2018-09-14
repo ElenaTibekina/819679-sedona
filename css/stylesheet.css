@@ -97,7 +97,6 @@ main {
 
 .menu-list a {
   display: block;
-  vertical-align: middle;
   color: #000000;
 }
 
@@ -178,8 +177,6 @@ main {
 
 .feature-title {
   margin: 0;
-  margin-bottom: 25px;
-  margin-top: 20px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -187,18 +184,18 @@ main {
 
 
 .feature-blue-1 .feature-title {
-  margin-top: 18px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   margin-right: 5px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: bold;
 }
 
 .feature-blue-3 .feature-title {
-  margin-top: 12px;
+  padding-top: 15px;
+  padding-bottom: 21px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: bold;
 }
 
 
@@ -214,6 +211,15 @@ main {
   text-align: center;
 }
 
+.feature-blue .feature-item-description {
+  width: 300px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .feature-blue .feature-description {
   font-size: 14px;
   line-height: 21px;
@@ -226,13 +232,13 @@ main {
 }
 
 .feature-blue-3 .feature-description {
-  padding-right: 40px;
-  padding-left: 50px;
+  padding-right: 35px;
+  padding-left: 40px;
 }
 
 .feature-blue-1 > .feature-item-description {
-  width: 34%;
-  padding-bottom: 60px;
+  width: 33%;
+  padding-bottom: 20px;
   padding-top: 25px;
 }
 
@@ -271,7 +277,7 @@ main {
 .feature-blue-3 > .feature-item-description {
   padding-bottom: 60px;
   padding-top: 30px;
-  width: 34%;
+  width: 33%;
 }
 
 .feature-blue-3 {
@@ -335,19 +341,29 @@ main {
   height: 74px;
 }
 
+.feature-white .feature-title {
+  padding-top: 30px;
+}
+
 .feature-block {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 0;
   text-align: center;
 }
 
 .feature-white .feature-description {
-  padding-left: 60px;
-  padding-right: 40px;
+  width: 300px;
+  min-height: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 45px;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   font-weight: regular;
   color: #333333;
 }
+
 
 .feature-grey {
   width: 100%;
@@ -369,17 +385,19 @@ main {
 }
 
 .feature-grey-block {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   width: 33%;
-  height: 256px;
+  min-height: 150px;
   padding-right: 60px;
   padding-left: 60px;
 }
 
 .feature-grey .feature-title {
-  padding-top: 25px;
-  padding-right: 70px;
-  padding-left: 70px;
+  width: 130px;
+  min-height: 50px;
+  margin: 0 auto;
 }
 
 .search {
@@ -448,6 +466,24 @@ main {
   border: none;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,6 +500,11 @@ main {
   text-align: center;
   width: 568px;
   height: 395px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .modal-search {
