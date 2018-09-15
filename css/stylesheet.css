@@ -773,9 +773,9 @@ main {
 }
 
 .filter legend {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
-  font-weight: normal;
+  font-weight: bold;
   color: #ffffff;
 }
 
@@ -914,9 +914,10 @@ main {
 }
 
 .filter-choice-title {
-  font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+  font-weight: bold;
+
 }
 
 .filter ul {
@@ -924,7 +925,6 @@ main {
   padding: 0;
   list-style: none;
   line-height: 21px;
-  padding-left: auto;
 }
 
 .filter-option {
@@ -1060,7 +1060,6 @@ main {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
   padding: 0;
   margin-left: 73px;
   list-style: none;
