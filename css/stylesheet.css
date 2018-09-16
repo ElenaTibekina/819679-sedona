@@ -1407,7 +1407,6 @@ main {
   background-color: #fefefe;
   opacity: 0.9;
   background-repeat: repeat;
-
 }
 
 
@@ -1419,7 +1418,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 55px;
+  height: 50px;
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -1438,8 +1437,8 @@ main {
   list-style: none;
 }
 
-.main-footer li {
-  padding-right: 5px;
+.footer-social li {
+  padding-right: 7px;
 }
 
 .footer-copyright {
@@ -1493,6 +1492,7 @@ main {
   background-color: #81b3d2;
 }
 
+
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
@@ -1511,11 +1511,11 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin-right: auto;
-  width: 240px;
+  width: 230px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .visually-hidden:not(:focus):not(:active),
