@@ -1426,10 +1426,13 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 155px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
+}
+
+.main-footer li {
+  padding-right: 5px;
 }
 
 .footer-copyright {
