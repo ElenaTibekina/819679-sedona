@@ -184,6 +184,10 @@ main {
   min-height: 256px;
 }
 
+.feature-blue img {
+  width: 100%;
+}
+
 .feature-item-description {
   margin: 0 auto;
   text-align: center;
@@ -237,7 +241,7 @@ main {
   width: 310px;
   min-height: 45px;
   padding-right: 35px;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .feature-blue-1 > .feature-item-description {
@@ -270,7 +274,7 @@ main {
 .feature-image-1 {
   background-color: #a0a0b0;
   background-repeat: no-repeat;
-  width: 66%;
+  width: 67%;
   height: 256px;
   margin: auto 0;
 }
@@ -278,7 +282,7 @@ main {
 .feature-image-3 {
   background-color: #e2ac95;
   background-repeat: no-repeat;
-  width: 66%;
+  width: 67%;
   height: 256px;
   margin: auto 0;
 }
@@ -789,13 +793,15 @@ main {
   color: #ffffff;
 }
 
+
+
 .filter-range {
-  width: 330px;
-  margin-right: 40px auto;
+  width: 314px;
+  padding-right: 15px;
 }
 
 .filter-range-title {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -803,7 +809,7 @@ main {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -842,12 +848,12 @@ main {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 60px;
 }
 
 .price-controls input {
-  width: 50px;
-  height: 38px;
+  width: 40px;
+  height: 32px;
   margin: 0;
 
   color: inherit;
@@ -894,7 +900,7 @@ main {
 }
 
 .range-toggle-max {
-  left: 76%;
+  left: 80%;
 }
 
 .range-toggle:hover {
@@ -1082,17 +1088,11 @@ main {
   line-height: 18px;
   font-weight: normal;
   color: #cacaca;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #81b3d2;
 }
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
   color: #81b3d2;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #81b3d2;
 }
 
 .breadcrumbs a:active {
@@ -1102,7 +1102,6 @@ main {
 
 .hotel-sort-item .hotel-sort-link-current {
   color: #81b3d2;
-  text-decoration: none;
 }
 
 .hotel-sort-name {
@@ -1111,7 +1110,16 @@ main {
 }
 
 .hotel-sort-item {
+  display: flex;
   padding-right: 34px;
+}
+
+.hotel-sort-link {
+  display: block;
+  padding-bottom: 1px;
+  border-bottom: 1px dotted #81b3d2;
+  margin: auto 0;
+  height: 14px;
 }
 
 .hotel-sort-item-name {
