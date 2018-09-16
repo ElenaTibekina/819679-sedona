@@ -1059,7 +1059,7 @@ main {
   background: #fefefe;
   margin: 0;
   padding: 0;
-  height: 86px;
+  height: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1234,15 +1234,15 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 150px;
-  margin-bottom: 2px;
-  padding-left: 73px;
+  height: 150px;
+  margin-bottom: 1px;
+  padding-left: 70px;
   padding-right: 73px;
   background: #fefefe;
 }
 
 .hotel-item:first-child {
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .hotel-item-container {
@@ -1262,7 +1262,6 @@ main {
 
 .hotel-name {
   margin: 0;
-  padding-top: 0;
 }
 
 .hotel-type-info {
@@ -1277,7 +1276,7 @@ main {
           align-items: center;
   width: 180px;
   min-height: 30px;
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 .hotel-rate-container {
@@ -1299,6 +1298,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 10px;
   width: 256px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1410,6 +1410,7 @@ main {
 
 }
 
+
 .main-footer-container {
   text-align: center;
   -webkit-box-align: center;
@@ -1514,6 +1515,7 @@ main {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  padding-left: 15px;
 }
 
 .visually-hidden:not(:focus):not(:active),
