@@ -63,7 +63,9 @@ main {
   display: block;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 0;
   z-index: 1;
 }
@@ -196,10 +198,19 @@ main {
 .feature-blue .feature-item-description {
   width: 300px;
   min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .feature-blue .feature-description {
@@ -402,8 +413,13 @@ main {
 }
 
 .feature-grey-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   width: 33%;
   min-height: 256px;
@@ -521,14 +537,17 @@ main {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-search {
   position: absolute;
   top: 0px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .apointment-form {
@@ -838,10 +857,14 @@ main {
 }
 
 .min-price label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .max-price label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -921,7 +944,9 @@ main {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
-  transform: translateX(-5px);
+  -webkit-transform: translateX(-5px);
+      -ms-transform: translateX(-5px);
+          transform: translateX(-5px);
 }
 
 .btn-transparent:hover {
@@ -1115,6 +1140,8 @@ main {
 }
 
 .hotel-sort-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-right: 34px;
 }
@@ -1442,9 +1469,14 @@ main {
 }
 
 .footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-left: auto;
   width: 241px;
   height: 50px;
