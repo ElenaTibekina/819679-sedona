@@ -214,22 +214,23 @@ main {
 
 
 .feature-blue-1 .feature-title {
-  width: 135px;
-  height: 50px;
-  padding-bottom: 10px;
+  width: 130px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding-bottom: 12px;
 }
 
 .feature-blue-3 .feature-title {
   width: 160px;
-  height: 40px;
-  padding-bottom: 21px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding-bottom: 12px;
 }
 
 
 .feature-blue-1 .feature-description {
   width: 300px;
   min-height: 45px;
-
 }
 
 .feature-blue-3 .feature-description {
@@ -240,11 +241,10 @@ main {
 }
 
 .feature-blue-1 > .feature-item-description {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   width: 33%;
-  min-height: 150px;
+  min-height: 256px;
+  margin: 0 auto;
+  line-height: normal;
 }
 
 
@@ -259,6 +259,10 @@ main {
   width: 100%;
 }
 
+.feature-blue .feature-number {
+  padding-bottom: 10px;
+}
+
 .feature-image {
   overflow: hidden;
 }
@@ -266,7 +270,7 @@ main {
 .feature-image-1 {
   background-color: #a0a0b0;
   background-repeat: no-repeat;
-  width: 67%;
+  width: 66%;
   height: 256px;
   margin: auto 0;
 }
@@ -281,10 +285,9 @@ main {
 
 
 .feature-blue-3 > .feature-item-description {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  min-height: 150px;
+  margin: 0 auto;
+  line-height: normal;
+  min-height: 256px;
   width: 33%;
 }
 
@@ -371,6 +374,7 @@ main {
   font-size: 14px;
   font-weight: normal;
   color: #333333;
+  line-height: inherit;
 }
 
 
@@ -412,13 +416,18 @@ main {
 }
 
 .feature-grey .feature-number {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .feature-grey .feature-description {
-  width: 275px;
+  width: 255px;
   min-height: 35px;
   margin: 0 auto;
+  line-height: normal;
+}
+
+.feature-description.road {
+  width: 275px;
 }
 
 .search {
@@ -1384,7 +1393,7 @@ main {
   background-color: #fefefe;
   opacity: 0.9;
   background-repeat: repeat;
-  min-height: 120px;
+
 }
 
 .main-footer-container {
@@ -1395,7 +1404,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 57px;
+  height: 55px;
   padding-bottom: 0;
   padding-top: 0;
 }
