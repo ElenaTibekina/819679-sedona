@@ -1177,7 +1177,6 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 35px;
-  height: 15px;
   margin-right: 75px;
 }
 
@@ -1321,7 +1320,7 @@ main {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100px;
+  height: 90px;
   margin-left: auto;
 }
 
@@ -1341,6 +1340,7 @@ main {
   vertical-align: top;
   height: 41px;
   margin-bottom: 10px;
+  width: 20px;
 }
 
 .button-more {
